@@ -77,9 +77,15 @@ Or by hand — copy `metadata.json` and `contents/` into
 
 Log out and back in (or restart KWin) for the package to be loaded.
 
-**Do not also load it by hand while the package is enabled.** KWin then runs two
-instances and every action happens twice. For testing without logging out, disable it
-in the KWin Scripts page first, then:
+KWin may evaluate a script **more than once per load**: with `loadScript` + `start` on
+6.8.2 the top level runs twice in the same second, so two handlers end up connected.
+Every action here is idempotent on purpose — moving a window to the same rectangle
+twice, or activating the same window twice, changes nothing — so the only symptom is a
+duplicated log line.
+
+Don't additionally load the script by hand while the package is enabled; that gives yet
+another instance. For testing without logging out, disable it in the KWin Scripts page
+first, then:
 
 ```sh
 busctl --user call org.kde.KWin /Scripting org.kde.kwin.Scripting \

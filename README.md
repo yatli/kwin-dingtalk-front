@@ -75,8 +75,11 @@ Or by hand — copy `metadata.json` and `contents/` into
 `~/.local/share/kwin/scripts/ding-front/`, then enable it in
 *System Settings → Window Management → KWin Scripts*.
 
-Log out and back in (or restart KWin) for the package to be loaded. To load it
-without logging out, while you are testing:
+Log out and back in (or restart KWin) for the package to be loaded.
+
+**Do not also load it by hand while the package is enabled.** KWin then runs two
+instances and every action happens twice. For testing without logging out, disable it
+in the KWin Scripts page first, then:
 
 ```sh
 busctl --user call org.kde.KWin /Scripting org.kde.kwin.Scripting \

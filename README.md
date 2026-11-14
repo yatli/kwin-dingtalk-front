@@ -1,5 +1,7 @@
 # kwin-dingtalk-front
 
+![before / after](docs/preview.png)
+
 Two fixes for the Linux DingTalk client on KDE Plasma Wayland, as a KWin script.
 No patches, no wrapper, no `LD_PRELOAD`; it only reacts to windows KWin already
 knows about.

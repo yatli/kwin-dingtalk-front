@@ -62,7 +62,7 @@ it is opened some other way it keeps the position the client chose. Windows that
 within 30 seconds of the previous DingTalk window at start-up are left alone so logging
 in does not steal focus.
 
-Source and issue tracker: <!-- add the repository URL here once published -->
+Source and issue tracker: https://github.com/yatli/kwin-dingtalk-front
 
 ## Changelog — 1.1
 

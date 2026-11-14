@@ -1,0 +1,14 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Id": "ding-front",
+        "Name": "DingTalk: bring popups to front",
+        "Description": "DingTalk (Linux, XWayland) maps its dialogs, popped-out chats and tray menu as independent toplevels with no activation token, so KWin's focus-stealing prevention leaves them behind, and its tray menu is placed at a random position. This script activates those windows when they appear and parks the tray menu next to the pointer.",
+        "Version": "1.1",
+        "License": "MIT",
+        "Author": "Yatao Li",
+        "EnabledByDefault": true
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js"
+}

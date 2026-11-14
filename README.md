@@ -1,5 +1,7 @@
 # kwin-dingtalk-front
 
+[Get it from the KDE Store](https://store.kde.org/p/2381845) · [opendesktop.org](https://www.opendesktop.org/p/2381845/)
+
 ![before / after](docs/preview.png)
 
 Two fixes for the Linux DingTalk client on KDE Plasma Wayland, as a KWin script.
